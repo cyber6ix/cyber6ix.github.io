@@ -399,7 +399,8 @@
                     <a href="#" class="nav_link w-nav-link nav1">Challenges</a>
                     <a href="#" class="nav_link w-nav-link nav2">Features</a>
                     <a href="#" class="nav_link w-nav-link nav3">Our Team</a>
-                    <a href="#" class="nav_link w-nav-link nav3">Final Report</a>
+                    <a href="#" class="nav_link w-nav-link nav4">Project Demo</a>
+                    <a href="#" class="nav_link w-nav-link nav3">Project Final Report</a>
                     <!--                    <div class="nav_button-wrapper">-->
                     <!--                        <a href="#" class="button is-small popup_open w-button">-->
                     <!--                            Contact Us-->
@@ -878,29 +879,41 @@
                 </div>
             </div>
         </section>
-        <section class="section_cta">
-            <div class="padding-global relative">
-                <div class="container-large">
-                    <div class="padding-vertical p-5">
-                        <div class="cta_wrapper">
-                            <h3>Take a closer look</h3>
-                            <iframe width="700" height="400"
-                                    src="https://www.youtube.com/embed/ii8Vv1_kgGg?si=6gG8NGQKmXpKCAjl"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                            </iframe>
-                        </div>
-                    </div>
+        <div class="p-4 div4">
+            <h1 class="text-center pb-3">Take a closer look</h1>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-lg-6">
+                    <iframe width="700" height="400"
+                            src="https://www.youtube.com/embed/ii8Vv1_kgGg?si=6gG8NGQKmXpKCAjl"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="col-md-6 col-sm-12 col-lg-6">
+                    <iframe width="700" height="400" src="https://www.youtube.com/embed/QJHUqRC4jXE?si=jHivc6afx_zEZps2"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="cta_left-img-wrapper">
-                <img src="https://assets-global.website-files.com/64f18220174f00aa16af8ff5/64f18220174f00aa16af902c_Frame%2044306.svg"
-                     loading="lazy" width="500" height="500" alt="Product Illustration"/></div>
-            <div class="cta_right-img-wrapper">
-                <img src="images/image11.png"
-                     loading="lazy" width="500" height="500" alt="Product Illustration"/></div>
-        </section>
+<!--            <div class="padding-global relative">-->
+<!--                <div class="container-large">-->
+<!--                    <div class="padding-vertical p-5">-->
+<!--                        <div class="cta_wrapper">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="cta_left-img-wrapper">-->
+<!--                <img src="https://assets-global.website-files.com/64f18220174f00aa16af8ff5/64f18220174f00aa16af902c_Frame%2044306.svg"-->
+<!--                     loading="lazy" width="500" height="500" alt="Product Illustration"/>-->
+<!--            </div>-->
+<!--            <div class="cta_right-img-wrapper">-->
+<!--                <img src="images/image11.png"-->
+<!--                     loading="lazy" width="500" height="500" alt="Product Illustration"/>-->
+<!--            </div>-->
+        </div>
     </main>
     <footer class="footer_component">
         <div class="padding-global">
@@ -929,7 +942,8 @@
                                 <a href="#" class="footer_link nav1">Challenges</a>
                                 <a href="#" class="footer_link nav2">Features</a>
                                 <a href="#" class="footer_link nav3">Our Team</a>
-                                <a href="#" class="footer_link">Final Report</a>
+                                <a href="#" class="footer_link nav4">Project Demo</a>
+                                <a href="#" class="footer_link">Project Final Report</a>
                             </div>
                         </div>
                     </div>
@@ -1082,6 +1096,11 @@
     $(".nav3").click(function () {
         $('html,body').animate({
             scrollTop: $(".div3").offset().top
+        }, 'fast');
+    });
+    $(".nav4").click(function () {
+        $('html,body').animate({
+            scrollTop: $(".div4").offset().top
         }, 'fast');
     });
     //end of nav js
